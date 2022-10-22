@@ -17,7 +17,6 @@ input.onButtonPressed(Button.A, function () {
     forward()
     for (let index = 0; index < 4; index++) {
         sensor()
-        num = 0
         if (distance <= 4) {
             num += 1
         }
@@ -56,6 +55,7 @@ let num = 0
 let distance = 0
 basic.showIcon(IconNames.Heart)
 distance = 0
+num = 0
 basic.forever(function () {
     sensor()
     basic.showNumber(distance)
