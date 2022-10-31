@@ -54,6 +54,7 @@ radio.setGroup(11)
 distance = 0
 let count = 0
 basic.forever(function () {
+    forward()
     basic.showNumber(distance)
     for (let index = 0; index < 4; index++) {
         sensor()
